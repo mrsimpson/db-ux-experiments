@@ -37,9 +37,7 @@
   ],
   "allowedTools": [
     "fs_read",
-    "@db UI Docs/fetch_core_web_documentation",
-    "@db UI Docs/search_core_web_code",
-    "@db UI Docs/search_core_web_documentation",
+    "@db UI Docs",
     "@responsible-vibe-mcp/codeReview",
     "@responsible-vibe-mcp/displayFindings",
     "@responsible-vibe-mcp/conduct_review",
