@@ -1,0 +1,75 @@
+{
+  "name": "vibe",
+  "description": "Responsible vibe development",
+  "mcpServers": {
+    "responsible-vibe-mcp": {
+      "command": "npx",
+      "args": ["responsible-vibe-mcp"]
+    },
+    "playwright": {
+      "command": "npx",
+      "args": ["@playwright/mcp@latest"]
+    },
+    "db UI Docs": {
+      "command": "npx",
+      "args": ["mcp-remote", "https://gitmcp.io/db-ux-design-system/core-web"]
+    },
+    "typescript-sdk Docs": {
+      "command": "npx",
+      "args": [
+        "mcp-remote",
+        "https://gitmcp.io/modelcontextprotocol/typescript-sdk"
+      ]
+    }
+  },
+  "tools": [
+    "execute_bash",
+    "fs_read",
+    "fs_write",
+    "report_issue",
+    "knowledge",
+    "thinking",
+    "use_aws",
+    "@responsible-vibe-mcp",
+    "@playwright",
+    "@db UI Docs",
+    "@typescript-sdk Docs"
+  ],
+  "allowedTools": [
+    "fs_read",
+    "@db UI Docs/fetch_core_web_documentation",
+    "@db UI Docs/search_core_web_code",
+    "@db UI Docs/search_core_web_documentation",
+    "@responsible-vibe-mcp/codeReview",
+    "@responsible-vibe-mcp/displayFindings",
+    "@responsible-vibe-mcp/conduct_review",
+    "@responsible-vibe-mcp/get_tool_info",
+    "@responsible-vibe-mcp/list_workflows",
+    "@responsible-vibe-mcp/resume_workflow",
+    "@responsible-vibe-mcp/start_development",
+    "@responsible-vibe-mcp/whats_next"
+  ],
+  "toolsSettings": {
+    "execute_bash": {
+      "alwaysAllow": [
+        {
+          "preset": "readOnly"
+        }
+      ]
+    },
+    "use_aws": {
+      "alwaysAllow": [
+        {
+          "preset": "readOnly"
+        }
+      ]
+    }
+  },
+  "resources": [
+    "file://AmazonQ.md",
+    "file://README.md",
+    "file://.amazonq/rules/**/*.md",
+    "file://~/projects/privat/mcp-server/responsible-vibe/SYSTEM_PROMPT.md"
+  ],
+  "hooks": {}
+}
