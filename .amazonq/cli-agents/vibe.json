@@ -3,16 +3,14 @@
   "description": "Responsible vibe development",
   "mcpServers": {
     "responsible-vibe-mcp": {
-      "command": "npx",
-      "args": ["responsible-vibe-mcp"]
+      "command": "node",
+      "args": [
+        "/Users/oliverjaegle/projects/privat/mcp-server/responsible-vibe/dist/index.js"
+      ]
     },
     "playwright": {
       "command": "npx",
       "args": ["@playwright/mcp@latest"]
-    },
-    "db UI Docs": {
-      "command": "npx",
-      "args": ["mcp-remote", "https://gitmcp.io/db-ux-design-system/core-web"]
     },
     "typescript-sdk Docs": {
       "command": "npx",
